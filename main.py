@@ -164,7 +164,7 @@ def insert_data(video_id, data, cast_names, tags, db_path):
 
 
 # Provide the path to your SQLite database file
-db_path = 'https://replit.com/@omaridma/DB-13plus-zz-sites-scraper#DB-13plus-without-vid-prev.db'
+db_path = 'DB-13plus-without-vid-prev.db'
 
 # Fetch video links from the database that don't have data yet
 video_links = fetch_unscraped_video_links(db_path)
