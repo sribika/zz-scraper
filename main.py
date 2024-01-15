@@ -4,8 +4,6 @@ import requests
 from bs4 import BeautifulSoup
 from keep_alive import keep_alive
 
-keep_alive()
-
 # Function to fetch links from the database that don't have data yet
 def fetch_unscraped_video_links(db_path):
     conn = sqlite3.connect(db_path)
@@ -139,3 +137,5 @@ for video_id, video_url in video_links:
         print('Failed to scrape data for video ID', video_id)
 
     time.sleep(2)
+
+keep_alive()
